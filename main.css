@@ -37,7 +37,7 @@ a:link {
   text-transform: lowercase;
 }
 .section-1 {
-  background-image: url('/img/main-img.jpg');
+  background-image: url('img/main-img.jpg');
   background-size: cover;
   height: 760px;
 }
