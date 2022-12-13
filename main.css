@@ -37,7 +37,7 @@ a:link {
   text-transform: lowercase;
 }
 .section-1 {
-  background-image: url('img/main-img.jpg');
+  background-image: url('/img/main-img.jpg');
   background-size: cover;
   height: 760px;
 }
@@ -104,13 +104,7 @@ h4 {
   align-items:center;
 }
 
-.section-1-button {
-  /* border:white 2px solid;
-  padding: 10px;
-  border-radius:5px;
-  background-color:azure; */
 
-}
 
 .section-1-button {
   color: rgb(255, 255, 255);
@@ -146,4 +140,8 @@ h4 {
 
 .img-distance {
   padding: 10px;
+}
+
+.content-block {
+  display: flex;
 }
