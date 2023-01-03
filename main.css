@@ -2,6 +2,11 @@ html,body {
   margin: 0;
   padding: 0;
 }
+
+img {
+  max-width: 100%;
+}
+
 @font-face {
   font-family: "Russo One, sans-serif";
   font-style: normal;
@@ -37,7 +42,7 @@ a:link {
   text-transform: lowercase;
 }
 .section-1 {
-  background-image: url('/img/main-img.jpg');
+  background-image: url('img/main-img.jpg');
   background-size: cover;
   height: 760px;
 }
@@ -54,9 +59,9 @@ h1 {
   color: white;
   font-size: 42px;
 }
-.content-block {
+/* .content-block {
   margin: 0 auto;
-}
+} */
 
 h3 {
   color:black;
@@ -88,6 +93,7 @@ h4 {
     justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .wrapper-text-section-1 {
@@ -139,9 +145,57 @@ h4 {
 }
 
 .img-distance {
-  padding: 10px;
+  padding: 5px;
 }
 
 .content-block {
   display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+} 
+
+.text-section {
+  padding:0 30px;
+}
+
+.content-block-section-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.wrapper-section-3{
+  display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+        
+.wrapper-section-img {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+}
+
+hr {
+  width: 962px;
+  max-width: 400px;
+}
+@media (min-width:400px) and (max-width: 600px) {
+  .section-1 {
+    background-image: url('img/main-mobile-img.jpg');
+    /* background-size: contain;
+    height: 271px; */
+  }
+  .header{
+    flex-wrap: wrap;
+  }       
+  .header-text{
+    font-size: 15px;
+  }
+}
+
+.button-distance{
+  padding-top: 25px;
 }
